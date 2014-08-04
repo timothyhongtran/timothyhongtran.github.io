@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('button').click(function(){
-		$(this).blur();
+	$('.button').click(function(){
+		$(this).hide();
 	});
 });

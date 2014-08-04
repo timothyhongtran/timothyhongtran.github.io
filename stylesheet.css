@@ -8,8 +8,7 @@
 	padding-bottom: 20px;
 	padding-left: 8.5%;
 	padding-right: 8.5%;
-	margin-right:auto;
-	margin-left:auto;
+	margin: 0, auto;
 	font-family: cursive;
 	font-size: 25px;
 
@@ -33,5 +32,4 @@
 
 #adj{
 	padding-top: 100px;
-
 }
