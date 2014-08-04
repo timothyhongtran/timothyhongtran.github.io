@@ -1,14 +1,34 @@
-div{
-	width: 200px;
-	height: 200px;
+.button{
+	width: 2em;
+	height: 2em;
 	background-color: #9494B8;	
 	display: inline;
 	border-radius: 1;
 	position: relative;
-	padding-top: 20px;
-	padding-left: 8%;
-	padding-right: 8%;
+	padding-bottom: 2em;
+	padding-left: 8.5%;
+	padding-right: 8.5%;
+	margin-right:auto;
+	margin-left:auto;
 	font-family: cursive;
-	font-size: 30px;
+	font-size: 25px;
+
+}
+
+#bigname{
+	width: 90%;
+	height: 250px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 80px; 
+	background-color: black;
+	font-size: 50px;
+}
+
+#adj{
+	padding-top: 100px;
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
 
 }
