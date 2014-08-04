@@ -23,12 +23,15 @@
 	margin-top: 80px; 
 	background-color: black;
 	font-size: 50px;
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+
+
+
 }
 
 #adj{
 	padding-top: 100px;
-	color: white;
-	text-align: center;
-	font-family: sans-serif;
 
 }
