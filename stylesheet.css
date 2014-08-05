@@ -3,8 +3,8 @@ body{
 	background-image: url('berkeley2.jpg');
 	background-attachment: fixed;
 	background-size: 100%;	
-	opacity: 0.75;
-
+/*	opacity: 0.75;
+*/
 }
 
 
@@ -37,13 +37,17 @@ body{
 	text-align: center;
 	border: solid;
 	border-color: white;
+	background: rgba(0, 0, 0, 0.7);
+
 
 }
 
 #adj{
-	padding-top: 100px;
+	padding-top: 90px;
 	font-family: 'Century Gothic', 'serif';
 	font-size: 120px;
+	background: rgba(0, 0, 0, 0.7);
+
 }
 
 #goto1{}
@@ -63,6 +67,8 @@ body{
 	background-color: black;
 	border: solid;
 	border-color: white;
+	background: rgba(0, 0, 0, 0.7);
+
 }
 
 #experience{
@@ -74,6 +80,8 @@ body{
 	background-color: black;
 	border: solid;
 	border-color: white;
+	background: rgba(0, 0, 0, 0.7);
+
 }
 
 #projects{
@@ -85,6 +93,8 @@ body{
 	background-color: black;
 	border: solid;
 	border-color: white;
+	background: rgba(0, 0, 0, 0.7);
+
 }
 
 #contact{
@@ -96,6 +106,8 @@ body{
 	background-color: black;
 	border: solid;
 	border-color: white;
+	background: rgba(0, 0, 0, 0.7);
+
 }
 
 h1{
