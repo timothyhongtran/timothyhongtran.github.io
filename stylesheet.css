@@ -3,13 +3,12 @@ body{
 	background-image: url('berkeley2.jpg');
 	background-attachment: fixed;
 	background-size: 100%;	
-	background-repeat: no-repeat;
 }
 
  #wrapper {
     margin-left:auto;
     margin-right:auto;
-    width:1300px;
+    width:85em;
 }
 
 .button{
