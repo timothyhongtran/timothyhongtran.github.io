@@ -18,7 +18,8 @@ body{
 	border-style: solid;
 	border-radius: 1;
 	position: relative;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 8%;
 	padding-right: 8%;
 	font-family: 'Trebuchet MS' 'serif';
@@ -29,7 +30,7 @@ body{
 }
 
 #bigname{
-	width: 1200px;
+	width: 1230px;
 	height: 600px;
 	margin-right:auto;
 	margin-left:auto;
@@ -62,11 +63,11 @@ body{
 #goto4{}
 
 #aboutme{
-	width: 1200px;
+	width: 1230px;
 	height: 600px;
 	margin-right:auto;
 	margin-left:auto;
-	margin-top: 50px; 
+	margin-top: 20px; 
 	background-color: black;
 	border: solid;
 	border-color: white;
@@ -84,11 +85,11 @@ body{
 
 
 #experience{
-	width: 1200px;
+	width: 1230px;
 	height: 600px;
 	margin-right:auto;
 	margin-left:auto;
-	margin-top: 50px; 
+	margin-top: 20px; 
 	background-color: black;
 	border: solid;
 	border-color: white;
@@ -97,11 +98,11 @@ body{
 }
 
 #projects{
-	width: 1200px;
+	width: 1230px;
 	height: 600px;
 	margin-right:auto;
 	margin-left:auto;
-	margin-top: 50px; 
+	margin-top: 20px; 
 	background-color: black;
 	border: solid;
 	border-color: white;
@@ -110,11 +111,11 @@ body{
 }
 
 #contact{
-	width: 1200px;
+	width: 1230px;
 	height: 600px;
 	margin-right:auto;
 	margin-left:auto;
-	margin-top: 50px; 
+	margin-top: 20px; 
 	background-color: black;
 	border: solid;
 	border-color: white;
@@ -138,4 +139,6 @@ ul{
 	color: white;
 	font-size: 30px;
 	font-family: 'Century Gothic', 'serif';
+	padding-left: 130px;
 }
+
