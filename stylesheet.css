@@ -3,6 +3,7 @@ body{
 	background-image: url('berkeley2.jpg');
 	background-attachment: fixed;
 	background-size: 100%;	
+	background-repeat: no-repeat;
 }
 
  #wrapper {
@@ -12,18 +13,17 @@ body{
 }
 
 .button{
-	width: 100px;
 	background-color: black;	
 	display: inline;
 	border-style: solid;
 	border-radius: 1;
 	position: relative;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 8%;
-	padding-right: 8%;
+	padding-top: 0.4em;
+	padding-bottom: 0.6em;
+	padding-left: 8.2%;
+	padding-right: 8.4%;
 	font-family: 'Trebuchet MS' 'serif';
-	font-size: 25px;
+	font-size: 1.5em;
 	color: white;
 
 
