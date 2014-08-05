@@ -1,6 +1,5 @@
 $(document).ready(function(){
-	$('.button').click(function(){
-	})
+	
 	$('.button').mouseenter(function(){
 		$(this).fadeTo(100, 0.5);
 	});
