@@ -22,7 +22,7 @@ body{
 
 #bigname{
 	width: 1200px;
-	height: 7000px;
+	height: 600px;
 	margin-right:auto;
 	margin-left:auto;
 	margin-top: 30px; 
@@ -33,8 +33,53 @@ body{
 	font-family: sans-serif;
 }
 
-
-
 #adj{
 	padding-top: 500px;
 }
+
+#goto1{}
+
+#goto2{}
+
+#goto3{}
+
+#goto4{}
+
+#aboutme{
+	width: 1200px;
+	height: 600px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 30px; 
+	background-color: orange;
+}
+
+#experience{
+	width: 1200px;
+	height: 600px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 30px; 
+	background-color: orange;
+}
+
+#projects{
+	width: 1200px;
+	height: 600px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 30px; 
+	background-color: orange;
+}
+
+#contact{
+	width: 1200px;
+	height: 600px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 30px; 
+	background-color: orange;
+}
+
+
+
