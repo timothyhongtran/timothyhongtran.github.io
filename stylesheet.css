@@ -3,7 +3,7 @@ body{
 	background-image: url('berkeley2.jpg');
 	background-attachment: fixed;
 	background-size: 100%;	
-	opacity: 0.8;
+	opacity: 0.75;
 
 }
 
@@ -19,7 +19,7 @@ body{
 	padding-left: 8%;
 	padding-right: 8%;
 	margin: 0px auto 0px auto;
-	font-family: cursive;
+	font-family: 'Trebuchet MS' 'serif';
 	font-size: 25px;
 	color: white;
 
@@ -37,13 +37,12 @@ body{
 	text-align: center;
 	border: solid;
 	border-color: white;
-	opacity: 0.7;
 
 }
 
 #adj{
 	padding-top: 100px;
-	font-family: 'Century Gothic', 'cursive';
+	font-family: 'Century Gothic', 'serif';
 	font-size: 120px;
 }
 
@@ -102,6 +101,17 @@ body{
 h1{
 	color:white;
 	font-size: 70px;
-	font-family: 'Century Gothic', 'cursive';
+	font-family: 'Century Gothic', 'serif';
 }
 
+p{
+	color:white;
+	font-size: 30px;
+	font-family: 'Century Gothic', 'serif';
+}
+
+ul{
+	color: white;
+	font-size: 30px;
+	font-family: 'Century Gothic', 'serif';
+}
