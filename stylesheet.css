@@ -45,7 +45,8 @@ body{
 }
 
 #adj{
-	padding-top: 90px;
+	margin-top: 200px;
+	padding: 20px;
 	font-family: 'Century Gothic', 'serif';
 	font-size: 120px;
 	background: rgba(0, 0, 0, 0.7);
@@ -72,6 +73,15 @@ body{
 	background: rgba(0, 0, 0, 0.7);
 
 }
+
+#mypic{
+	width: 270px;
+	height: 400px;
+	margin-left: 35px;
+	margin-right: 60px;
+	float: left;
+}
+
 
 #experience{
 	width: 1200px;
