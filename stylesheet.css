@@ -8,23 +8,23 @@ body{
  #wrapper {
     margin-left:auto;
     margin-right:auto;
-    width:85em;
+    width: 1200px;
 }
 
 .button{
 	background-color: black;	
 	display: inline;
+	vertical-align: bottom;
 	border-style: solid;
 	border-radius: 1;
 	position: relative;
-	padding-top: 0.4em;
-	padding-bottom: 0.6em;
-	padding-left: 8.2%;
-	padding-right: 8.4%;
-	font-family: 'Trebuchet MS' 'serif';
+	padding-top: 0.2em;
+	padding-bottom: 0.5em;
+	padding-left: 8%;
+	padding-right: 8%;
+	font-family: 'Trebuchet MS' 'san-serif';
 	font-size: 1.5em;
 	color: white;
-
 
 }
 
@@ -47,7 +47,7 @@ body{
 #adj{
 	margin-top: 200px;
 	padding: 20px;
-	font-family: 'Century Gothic', 'serif';
+	font-family: 'Century Gothic', 'san-serif';
 	font-size: 120px;
 	background: rgba(0, 0, 0, 0.7);
 
@@ -125,19 +125,19 @@ body{
 h1{
 	color:white;
 	font-size: 70px;
-	font-family: 'Century Gothic', 'serif';
+	font-family: 'Century Gothic', 'san-serif';
 }
 
 p{
 	color:white;
 	font-size: 30px;
-	font-family: 'Century Gothic', 'serif';
+	font-family: 'Century Gothic', 'san-serif';
 }
 
 ul{
 	color: white;
 	font-size: 30px;
-	font-family: 'Century Gothic', 'serif';
+	font-family: 'Century Gothic', 'san-serif';
 	padding-left: 130px;
 }
 
