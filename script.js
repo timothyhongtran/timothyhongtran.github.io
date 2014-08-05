@@ -27,6 +27,7 @@ $(document).ready(function(){
 
 	$('.button').mouseenter(function(){
 		$(this).fadeTo(100, 0.5);
+		$(this).css('cursor', 'pointer');
 	});
 
 	$('.button').mouseleave(function(){
