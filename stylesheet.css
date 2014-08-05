@@ -4,6 +4,10 @@ body{
 	background-attachment: fixed;
 }
 
+.jumper{
+
+}
+
 .button{
 	width: 100px;
 	background-color: #9494B8;	
@@ -36,5 +40,5 @@ body{
 
 
 #adj{
-	padding-top: 250px;
+	padding-top: 500px;
 }
