@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="myStyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 <script src="myScript.js"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <title>Game</title>
@@ -10,12 +15,17 @@
 <body>
 <h1>Video Game</h1>
 
-<div id="container">
-	<img id="background" src="images/backgrounds/berkeleyCampus.png" onclick="changeBackground()">
-	<img id="character" src="images/amy.png">
+<div id="container" onclick="changeCharacter()">
+	<img id="background" src="images/backgrounds/berkeleyCampus.png">
+	<img id="character" src="images/characters/amy/blush.png">
 	<div id="textBox"></div> 
 </div>
 
+<script>
+$( '#container' ).click(function() {
+  $( "#container" ).effect('shake');
+});
+</script>
 
 </body>
 
