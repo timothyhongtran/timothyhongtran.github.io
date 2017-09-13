@@ -15,7 +15,7 @@ var scene1 = [
 // var myMusic = new Audio('music/shake.mp3');
 // myMusic.play();
 
-//still incomplete
+//still incomplete 
 function parseArray(){
 	nextBackground = scene1[0][0];
 	nextCharacter = scene1[0][1];
