@@ -5,10 +5,11 @@ var sceneArray; //each element of the array will contain each of the above eleme
 nextBackground = "supermarket.png";
 nextCharacter = "amy";
 nextEmotion = "neutral";
+nextText = "this is the nexttext"
+nextMusic = "blank.mp3"
 
-
-// var audio = new Audio('shake.mp3');
-// audio.play();
+var myMusic = new Audio('music/shake.mp3');
+myMusic.play();
 
 //changeScene not yet tested
 function changeScene(){
@@ -33,13 +34,22 @@ function changeEmotion() {
 }
 
 function changeText() {
+	document.getElementById("text").innerHTML = nextText;	
 }
 
 function changeMusic() {
-
+	myMusic.pause();
+	myMusic = new Audio("music/" + nextMusic);
+	myMusic.play();
 }
 
 function changeSoundEffect() {	
 }
+
+function shake(){
+	$( "#container" ).effect('shake');
+}
+
+
 
 

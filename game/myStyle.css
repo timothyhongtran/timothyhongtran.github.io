@@ -27,7 +27,17 @@ h1{
 	width:960px; 
 	height:200px;
 	bottom: 3px;
-	opacity: 0.6;
+	opacity: 0.85;
 	background-color: black;
+}
+
+#text{
+	width: 930px;
+	position: relative;
+	color: white;
+	font-size: 200%;
+	top: -10px;
+	left: 20px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
