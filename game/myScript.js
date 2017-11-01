@@ -6,11 +6,11 @@ myScene = 1;
 myBackground = "images/backgrounds/berkeleyCampus.png";
 myCharacter = "images/characters/amy/blush.png";
 myEmotion = "images/characters/amy/blush.png";
-myText = "The man moves to the table and shuffles some papers to the side with the back of his hand. He places the glass, half filled with an amber liquid, down where the papers once lay."
+myText = "";
+nextCharacter = "";
 
 var myMusic = "none";
-var musicPlayer = new Audio('none/XYZ.mp3');
-musicPlayer.loop = true;
+var musicPlayer = new Audio('none.mp3');
 musicPlayer.play();
 
 //still incomplete 
@@ -73,6 +73,9 @@ function changeEmotion() {
 }
 
 function changeText() {
+	if (nextCharacter != ""){
+		nextText = nextCharacter + "<br>" + nextText;
+	}
 	document.getElementById("text").innerHTML = nextText;	
 }
 
@@ -107,20 +110,24 @@ var scene1 = [
 ["restaurant.jpg", "Tiffany", "neutral", "So you’ve been roommates with Daniel since freshman year?", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "neutral", "Yeah we’ve been together all four years at Berkeley. We were actually just paired up randomly when we first got here.", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "surprise", "No kidding! That’s so cool that you guys were complete randos and are like best friends now.", "brodyquest", "", ""],
-["restaurant.jpg", "Ethan", "neutral", "Yeah it’s really cool.", "brodyquest", "", ""],
-["restaurant.jpg", "", "", "There’s a lingering pause in the air. Both shot a look at the other and then down at their plates.", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "neutral", "Yeah it’s really cool!", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "There’s a lingering pause in the air. Both shoot a look at the other and then down at their plates.", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "neutral", "So what-", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "neutral", "How do-", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "sweat", "Go ahead.", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "neutral", "No please go first.", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "worried", "Uh, okay so what are you studying again?", "brodyquest", "", ""],
-["restaurant.jpg", "Tiffany", "neutral", "I’m getting my business degree. That’s actually how I met Daniel. We were in the same study group for an econ class.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "neutral", "I’m in Haas. That’s actually how I met Daniel. We were in the same study group for an econ class back in freshman year.", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "neutral", "Oh well it wasn’t even a study group because we were done with midterms by then.", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "happy", "I think it was at post midterm drinks actually. Yes, right, we met at the bar.", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "neutral", "Oh nice.", "brodyquest", "", ""],
-["restaurant.jpg", "Tiffany", "neutral", "So what do you do for fun?", "brodyquest", "", ""],
-["restaurant.jpg", "Ethan", "sweat", "I uh…", "brodyquest", "", ""],
-["restaurant.jpg", "Ethan", "sweat", "You are about to make you’re a game choice. Your choices will determine how the story unfolds. Some choices have minimal consequences, some major.", "brodyquest", ""],
+["restaurant.jpg", "Tiffany", "neutral", "Yeah... Uh so what do you do for fun?", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "sweat", "Fun?", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Ethan rubs his hand on the back of his neck and swings it back to the table...", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "...sending a full glass of water shattering onto the table.", "brodyquest", "shatter", "shake"],
+["restaurant.jpg", "Ethan", "worried", "Oh shit!", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "worried", "Don't worry! I'll handle this!", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "You are about to make you’re a game choice. Your choices will determine how the story unfolds. Some choices have minimal consequences, some major.", "brodyquest", ""],
 [2,3,4]
 ];
 
