@@ -1,6 +1,6 @@
 var myScene, myBackground, myCharacter, myEmotion, myText, myMusic, shake;
 var nextBackground, nextCharacter, nextEmotion, nextText, nextMusic, nextSoundEffect;
-var sceneArray; //each element of the array will contain each of the above elements
+var currentScene = []; //the actual scene array
 
 myScene = 1; 
 myBackground = "images/backgrounds/berkeleyCampus.png";
@@ -15,16 +15,8 @@ musicPlayer.play();
 
 //still incomplete 
 function parseArray(){
-	var currentScene;
 	currentScene = "scene" + myScene; 
 	currentScene = window[currentScene];
-
-	//let player select choice
-	if(currentScene.length == 1){
-		showActions();
-		currentScene = "scene2";
-		currentScene = window[currentScene];
-	}
 
 	nextBackground = currentScene[0][0];
 	nextCharacter = currentScene[0][1];
@@ -38,6 +30,15 @@ function parseArray(){
 
 //still incomplete
 function changeScene(){
+	
+	//force player to select choice if watershed moment
+	if(currentScene.length == 1){
+		document.getElementById("text").innerHTML = currentScene[0][0];	
+		showActions();
+		return;
+	}	
+
+	//otherwise continue as normal
 	parseArray();
 	if (nextBackground != myBackground) { changeBackground() };
 	if (nextCharacter != myCharacter) { changeCharacter() } else{changeEmotion()} ; //else same character but a change in emotion
@@ -163,15 +164,21 @@ var scene1 = [
 ["restaurant.jpg", "Ethan", "worried", "Oh shit!", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "worried", "Don't worry! I'll handle this!", "brodyquest", "", ""],
 ["restaurant.jpg", "", "", "You are about to make you’re a game choice. Your choices will determine how the story unfolds. Some choices have minimal consequences, some major.", "brodyquest", ""],
-[2,3,4]
+["Mop up the water.","Push the water off the table.","Do nothing."]
 ];
 
 var scene2 = [
-["restaurant.jpg", "", "", "Test", "brodyquest", "", ""],
-["restaurant.jpg", "", "", "Test2", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Secne2", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Scene2 again", "brodyquest", "", ""],
 ];
 
+var scene3 = [
+["restaurant.jpg", "", "", "Secne3", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Scene3 again", "brodyquest", "", ""],
+];
 
-
-
+var scene4 = [
+["restaurant.jpg", "", "", "Secne4", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Scene4 again", "brodyquest", "", ""],
+];
 
