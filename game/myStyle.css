@@ -42,3 +42,41 @@ h1{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+#action1{
+	position: absolute;
+	width:960px; 
+	height: 66px;
+	bottom: 136px;
+	opacity: 0.85;
+	visibility: hidden;
+}
+
+#action1:hover > p {
+	color: red;
+}
+
+#action2{
+	position: absolute;
+	width:960px; 
+	height: 66px;
+	bottom: 70px;
+	opacity: 0.85;
+	visibility: hidden;
+}
+
+#action2:hover > p {
+	color: red;
+}
+
+#action3{
+	position: absolute;
+	width:960px; 
+	height:66px;
+	bottom: 3px;
+	opacity: 0.85;
+	visibility: hidden;
+}
+
+#action3:hover > p {
+	color: red;
+}

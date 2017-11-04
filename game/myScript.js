@@ -21,7 +21,9 @@ function parseArray(){
 
 	//let player select choice
 	if(currentScene.length == 1){
-		playerChoice();
+		showActions();
+		currentScene = "scene2";
+		currentScene = window[currentScene];
 	}
 
 	nextBackground = currentScene[0][0];
@@ -50,11 +52,28 @@ function changeScene(){
 }
 
 //still incomplete
-function playerChoice(){
-	if (choiceDict[myScene].length == 2){
-		alert("2");
-	} else{
-		alert("3");
+function showActions(){
+	if (choiceDict[myScene].length == 2){ //if there are only two options
+		$(document).ready(function(){
+        $('#action1').css('visibility', 'visible');
+    });
+
+    $(document).ready(function(){
+        $('#action2').css('visibility', 'visible');
+    });
+	} else{ //if there are 3 options
+		
+	$(document).ready(function(){
+        $('#action1').css('visibility', 'visible');
+    });
+
+    $(document).ready(function(){
+        $('#action2').css('visibility', 'visible');
+    });
+
+    $(document).ready(function(){
+        $('#action3').css('visibility', 'visible');
+    });
 	}
 	
 }
@@ -91,6 +110,22 @@ function playSoundEffect() {
 	nextSoundEffect = new Audio("sounds/" + nextSoundEffect + ".mp3");
 	nextSoundEffect.play();
 }
+
+
+function action1(){
+    $(document).ready(function(){
+        $('#action1').css('visibility', 'hidden');
+    });}
+
+function action2(){
+    $(document).ready(function(){
+        $('#action2').css('visibility', 'hidden');
+    });}
+
+function action3(){
+    $(document).ready(function(){
+        $('#action3').css('visibility', 'hidden');
+    });}
 
 //key= what the current scene is
 //value = what the next scene depending on what player selects
@@ -129,6 +164,11 @@ var scene1 = [
 ["restaurant.jpg", "Ethan", "worried", "Don't worry! I'll handle this!", "brodyquest", "", ""],
 ["restaurant.jpg", "", "", "You are about to make you’re a game choice. Your choices will determine how the story unfolds. Some choices have minimal consequences, some major.", "brodyquest", ""],
 [2,3,4]
+];
+
+var scene2 = [
+["restaurant.jpg", "", "", "Test", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Test2", "brodyquest", "", ""],
 ];
 
 
