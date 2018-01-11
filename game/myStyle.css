@@ -40,6 +40,7 @@ h1{
 	top: -10px;
 	left: 20px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	cursor: default;
 }
 
 #action1{
@@ -52,6 +53,7 @@ h1{
 
 #action1:hover > p {
 	color: red;
+	cursor: pointer;
 }
 
 #action1text{
@@ -84,6 +86,7 @@ h1{
 
 #action2:hover > p {
 	color: red;
+	cursor: pointer;
 }
 
 #action3{
@@ -106,4 +109,5 @@ h1{
 
 #action3:hover > p {
 	color: red;
+	cursor: pointer;
 }
