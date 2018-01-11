@@ -16,7 +16,13 @@
 <body>
 <h1>Berkeley: Zombie Attack</h1>
 
-<div id="container" onclick="changeScene()">
+<div id="startScreen">
+	<img id="startScreenBackground" src="images/backgrounds/berkeleyCampus.png">
+	<p id="newGame" onclick="newGame()">NEW GAME</p>
+	<p id="continueGame">CONTINUE</p>
+</div>
+
+<div id="mainScreen" onclick="changeScene()">
 	<img id="background" src="images/backgrounds/berkeleyCampus.png">
 	<img id="character" src="none">
 	<div id="textBox"><p id="text">Game Currently Under Construction - Click to play!</p></div> 

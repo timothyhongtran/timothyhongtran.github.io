@@ -8,6 +8,12 @@ var myMusic = "none";
 var musicPlayer = new Audio('none.mp3');
 musicPlayer.play();
 
+function newGame(){
+	$('#newGame').css('visibility', 'hidden');
+	$('#continueGame').css('visibility', 'hidden');
+	$('#startScreen').css('display', 'none');
+	$('#mainScreen').css('display', 'block');
+}
 
 function establishNewScene(){
 	currentScene = "scene" + myScene; 
@@ -39,7 +45,7 @@ function changeScene(){
 	playSoundEffect();
 	if (shake == "shake") { 	//shakes the main div
 		$(document).ready(function(){
-			$( "#container" ).effect('shake');
+			$( "#mainScreen" ).effect('shake');
 	});
  };
 }

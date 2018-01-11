@@ -4,11 +4,38 @@ h1{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-#container{
+#startScreen{
 	position: relative;
 	display: block;
 	margin: auto;
 	width: 960px;
+}
+
+#newGame{
+	position: absolute;
+	bottom: 0px;
+	right: 700px;
+	bottom: 300px;
+}
+
+#continueGame{
+	position: absolute;
+	bottom: 0px;
+	right: 500px;
+	bottom: 300px;
+}
+
+#startScreenBackground{
+	width:960px; 
+	height:600px;
+}
+
+#mainScreen{
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 960px;
+	display: none;
 }
 
 #background{
