@@ -1,6 +1,7 @@
 var myScene, myBackground, myCharacter, myEmotion, myText, myMusic, shake;
 var nextBackground, nextCharacter, nextEmotion, nextText, nextMusic, nextSoundEffect;
 var currentScene = []; //the actual scene array
+var currentSceneCopy = []; //the array we're destroying
 
 myScene = 1; 
 myBackground = "images/backgrounds/berkeleyCampus.png";
@@ -82,9 +83,9 @@ function showActions(){
 }
 
 function hideAllActions(){
-	$('#action1text').css('visibility', 'hidden');
-	$('#action2text').css('visibility', 'hidden');
-	$('#action3text').css('visibility', 'hidden');
+	$('#action1').css('visibility', 'hidden');
+	$('#action2').css('visibility', 'hidden');
+	$('#action3').css('visibility', 'hidden');
 }
 
 function action1(){
@@ -141,7 +142,8 @@ function playSoundEffect() {
 //key= what the current scene is
 //value = what the next scene depending on what player selects
 var choiceDict = {
-	1 : [2,3,4]
+	1 : [2,3,4],
+	2 : [1,2,3],
 };
 
 //All dialogue arrays below
@@ -181,6 +183,7 @@ var scene2 = [
 ["restaurant.jpg", "", "", "Secne2", "brodyquest", "", ""],
 ["restaurant.jpg", "", "", "Scene2 again", "brodyquest", "", ""],
 ["restaurant.jpg", "", "", "Scene2 again again", "brodyquest", "", ""],
+["1","2","3"]
 ];
 
 var scene3 = [
