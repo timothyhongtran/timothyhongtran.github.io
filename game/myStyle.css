@@ -54,12 +54,32 @@ h1{
 	color: red;
 }
 
+#action1text{
+	width: 930px;
+	position: relative;
+	color: white;
+	font-size: 200%;
+	top: -10px;
+	left: 20px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
 #action2{
 	position: absolute;
 	width:960px; 
 	height: 66px;
 	bottom: 70px;
 	visibility: hidden;
+}
+
+#action2text{
+	width: 930px;
+	position: relative;
+	color: white;
+	font-size: 200%;
+	top: -10px;
+	left: 20px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #action2:hover > p {
@@ -72,6 +92,16 @@ h1{
 	height:66px;
 	bottom: 3px;
 	visibility: hidden;
+}
+
+#action3text{
+	width: 930px;
+	position: relative;
+	color: white;
+	font-size: 200%;
+	top: -10px;
+	left: 20px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #action3:hover > p {

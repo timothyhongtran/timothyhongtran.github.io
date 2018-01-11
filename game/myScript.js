@@ -25,7 +25,6 @@ function parseArray(){
 	nextMusic = currentScene[0][4];
 	nextSoundEffect = currentScene[0][5];
 	shake = currentScene[0][6];
-	currentScene.shift();
 }
 
 //still incomplete
@@ -33,13 +32,14 @@ function changeScene(){
 	
 	//force player to select choice if watershed moment
 	if(currentScene.length == 1){
-		document.getElementById("text").innerHTML = currentScene[0][0];	
+		document.getElementById("text").innerHTML = "";	
 		showActions();
 		return;
 	}	
 
 	//otherwise continue as normal
 	parseArray();
+	currentScene.shift();
 	if (nextBackground != myBackground) { changeBackground() };
 	if (nextCharacter != myCharacter) { changeCharacter() } else{changeEmotion()} ; //else same character but a change in emotion
 	if (nextMusic != myMusic) { changeMusic() } ;
@@ -52,31 +52,57 @@ function changeScene(){
  };
 }
 
-//still incomplete
 function showActions(){
 	if (choiceDict[myScene].length == 2){ //if there are only two options
 		$(document).ready(function(){
+        $('#action1text').html(currentScene[0][0]);
         $('#action1').css('visibility', 'visible');
     });
 
     $(document).ready(function(){
+        $('#action2text').html(currentScene[0][1]);
         $('#action2').css('visibility', 'visible');
     });
 	} else{ //if there are 3 options
-		
 	$(document).ready(function(){
+        $('#action1text').html(currentScene[0][0]);
         $('#action1').css('visibility', 'visible');
     });
 
     $(document).ready(function(){
+        $('#action2text').html(currentScene[0][1]);
         $('#action2').css('visibility', 'visible');
     });
 
     $(document).ready(function(){
+        $('#action3text').html(currentScene[0][2]);
         $('#action3').css('visibility', 'visible');
     });
 	}
-	
+}
+
+function hideAllActions(){
+	$('#action1text').css('visibility', 'hidden');
+	$('#action2text').css('visibility', 'hidden');
+	$('#action3text').css('visibility', 'hidden');
+}
+
+function action1(){
+    hideAllActions();
+    myScene = choiceDict[myScene][0];
+    parseArray();
+}
+
+function action2(){
+    hideAllActions();
+    myScene = choiceDict[myScene][1];
+    parseArray();
+}
+
+function action3(){
+	hideAllActions();
+	myScene = choiceDict[myScene][2];
+    parseArray();
 }
 
 
@@ -111,22 +137,6 @@ function playSoundEffect() {
 	nextSoundEffect = new Audio("sounds/" + nextSoundEffect + ".mp3");
 	nextSoundEffect.play();
 }
-
-
-function action1(){
-    $(document).ready(function(){
-        $('#action1').css('visibility', 'hidden');
-    });}
-
-function action2(){
-    $(document).ready(function(){
-        $('#action2').css('visibility', 'hidden');
-    });}
-
-function action3(){
-    $(document).ready(function(){
-        $('#action3').css('visibility', 'hidden');
-    });}
 
 //key= what the current scene is
 //value = what the next scene depending on what player selects
@@ -170,15 +180,18 @@ var scene1 = [
 var scene2 = [
 ["restaurant.jpg", "", "", "Secne2", "brodyquest", "", ""],
 ["restaurant.jpg", "", "", "Scene2 again", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Scene2 again again", "brodyquest", "", ""],
 ];
 
 var scene3 = [
 ["restaurant.jpg", "", "", "Secne3", "brodyquest", "", ""],
 ["restaurant.jpg", "", "", "Scene3 again", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Scene3 again again", "brodyquest", "", ""],
 ];
 
 var scene4 = [
 ["restaurant.jpg", "", "", "Secne4", "brodyquest", "", ""],
 ["restaurant.jpg", "", "", "Scene4 again", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Scene4 again again", "brodyquest", "", ""],
 ];
 
