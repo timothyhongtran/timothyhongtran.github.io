@@ -136,53 +136,66 @@ function playSoundEffect() {
 //value = what the next scene depending on what player selects
 var choiceDict = {
 	1 : [2,3,4],
-	2 : [1,2,3],
+	2 : [2,3,4],
+	3 : [2,3,4],
+	4 : [2,3,4]
 };
 
 //All dialogue arrays below
 var scene1 = [
-["restaurant.jpg", "", "", "Tako Sushi – Berkeley, CA", "brodyquest", "", ""],
-["restaurant.jpg", "Tiffany", "neutral", "So you’ve been roommates with Daniel since freshman year?", "brodyquest", "", ""],
-["restaurant.jpg", "Ethan", "neutral", "Yeah we’ve been together all four years at Berkeley. We were actually just paired up randomly when we first got here.", "brodyquest", "", ""],
-["restaurant.jpg", "Tiffany", "surprise", "No kidding! That’s so cool that you guys were complete randos and are like best friends now.", "brodyquest", "", ""],
-["restaurant.jpg", "Ethan", "neutral", "Yeah it’s really cool!", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "neutral", "So you’ve been roommates with Daniel for how long again?", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "neutral", "We’ve been together pretty much our entire time at college. We were actually just paired up randomly when we first got here.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "shock", "No kidding! That’s so cool that you guys were complete randos and are like best friends now.", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "neutral", "Yeah it’s really cool huh...", "brodyquest", "", ""],
 ["restaurant.jpg", "", "", "There’s a lingering pause in the air. Both shoot a look at the other and then down at their plates.", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "neutral", "So what-", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "neutral", "How do-", "brodyquest", "", ""],
-["restaurant.jpg", "Ethan", "sweat", "Go ahead.", "brodyquest", "", ""],
-["restaurant.jpg", "Tiffany", "neutral", "No please go first.", "brodyquest", "", ""],
-["restaurant.jpg", "Ethan", "worried", "Uh, okay so what are you studying again?", "brodyquest", "", ""],
-["restaurant.jpg", "Tiffany", "neutral", "I’m in Haas. That’s actually how I met Daniel. We were in the same study group for an econ class back in freshman year.", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "shock", "Go ahead.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "shock", "No please go first.", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "shock", "Uh okay. So... so what are you studying again?", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "neutral", "Business! That’s actually how I met Daniel. We were in the same study group for an econ class back in freshman year.", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "neutral", "Oh well it wasn’t even a study group because we were done with midterms by then.", "brodyquest", "", ""],
-["restaurant.jpg", "Tiffany", "happy", "I think it was at post midterm drinks actually. Yes, right, we met at the bar.", "brodyquest", "", ""],
-["restaurant.jpg", "Ethan", "neutral", "Oh nice.", "brodyquest", "", ""],
-["restaurant.jpg", "Tiffany", "neutral", "Yeah... Uh so what do you do for fun?", "brodyquest", "", ""],
-["restaurant.jpg", "Ethan", "sweat", "Fun?", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "laugh", "I think it was at post midterm drinks actually. That's right! We met at the bar actually.", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "shock", "Oh nice.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "neutral", "Yeah... So... what do you do for fun?", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "sad", "Fun?", "brodyquest", "", ""],
 ["restaurant.jpg", "", "", "Ethan rubs his hand on the back of his neck and swings it back to the table...", "brodyquest", "", ""],
 ["restaurant.jpg", "", "", "...sending a full glass of water shattering onto the table.", "brodyquest", "shatter", "shake"],
-["restaurant.jpg", "Ethan", "worried", "Oh shit!", "brodyquest", "", ""],
-["restaurant.jpg", "Ethan", "worried", "Don't worry! I'll handle this!", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "shock", "Oh no!", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "shock", "Don't worry! I'll handle this!", "brodyquest", "", ""],
 ["restaurant.jpg", "", "", "You are about to make you’re a game choice. Your choices will determine how the story unfolds. Some choices have minimal consequences, some major.", "brodyquest", ""],
-["Mop up the water.","Push the water off the table.","Do nothing."]
+["Mop up the water with something nearby","Push the water off the table","Drink the spilt water"]
 ];
-var currentScene = scene1.slice(); //copy of the actual scene array
 
 var scene2 = [
-["restaurant.jpg", "", "", "Secne2", "brodyquest", "", ""],
-["restaurant.jpg", "", "", "Scene2 again", "brodyquest", "", ""],
-["restaurant.jpg", "", "", "Scene2 again again", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Ethan grabs something nearby and dumps it on the water. He moves back and forth in a circle mopping the mess.", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "laugh", "See no harm, no foul right? Ha ha.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "shock", "Oh my god! Stop!", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "annoy", "That's my cardigan you're using!", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "shock", "Oh no! Wait sorry!", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Ethan stops and writhes the water out of the cardigan onto the floor. He hands it back.", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "sad", "So... No harm, no foul?", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "annoy", "...", "brodyquest", "", ""],
 ["1","2","3"]
 ];
 
+
 var scene3 = [
-["restaurant.jpg", "", "", "Secne3", "brodyquest", "", ""],
-["restaurant.jpg", "", "", "Scene3 again", "brodyquest", "", ""],
-["restaurant.jpg", "", "", "Scene3 again again", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Ethan grabs a handful of napkins and pushes the water off the table.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "shock", "Stop! You're getting it all over my shoes!", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "shock", "Oh no! Wait sorry!", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "sad", "Guess I should've looked where I was pushing it off huh? Heh...", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "annoy", "...", "brodyquest", "", ""],
+["1","2","3"]
 ];
 
 var scene4 = [
-["restaurant.jpg", "", "", "Secne4", "brodyquest", "", ""],
-["restaurant.jpg", "", "", "Scene4 again", "brodyquest", "", ""],
-["restaurant.jpg", "", "", "Scene4 again again", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Ethan places his lips on the table and starts sucking the spilt water like a vacuum cleaner.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "shock", "EWW! Oh my god stop it.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "shock", "Just use a napkin! That's so gross!", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "shock", "Oh... Yeah that's a good point.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "annoy", "...", "brodyquest", "", ""],
+["1","2","3"]
 ];
 
+var currentScene = scene1.slice(); //copy of the actual scene array
