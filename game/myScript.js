@@ -51,7 +51,12 @@ function changeScene(){
 }
 
 function showActions(){
-	if (choiceDict[myScene].length == 2){ //if there are only two options
+	if (choiceDict[myScene].length == 1){ //if there are only two options
+		$(document).ready(function(){
+        $('#action1text').html(currentScene[0][0]);
+        $('#action1').css('visibility', 'visible');
+    });
+	} else if (choiceDict[myScene].length == 2){ //if there are only two options
 		$(document).ready(function(){
         $('#action1text').html(currentScene[0][0]);
         $('#action1').css('visibility', 'visible');
@@ -136,9 +141,10 @@ function playSoundEffect() {
 //value = what the next scene depending on what player selects
 var choiceDict = {
 	1 : [2,3,4],
-	2 : [2,3,4],
-	3 : [2,3,4],
-	4 : [2,3,4]
+	2 : [2,3],
+	3 : [5],
+	4 : [5],
+	5 : [1]
 };
 
 //All dialogue arrays below
@@ -176,7 +182,7 @@ var scene2 = [
 ["restaurant.jpg", "", "", "Ethan stops and writhes the water out of the cardigan onto the floor. He hands it back.", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "sad", "So... No harm, no foul?", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "annoy", "...", "brodyquest", "", ""],
-["1","2","3"]
+["1", "2"]
 ];
 
 
@@ -186,7 +192,7 @@ var scene3 = [
 ["restaurant.jpg", "Ethan", "shock", "Oh no! Wait sorry!", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "sad", "Guess I should've looked where I was pushing it off huh? Heh...", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "annoy", "...", "brodyquest", "", ""],
-["1","2","3"]
+["1"]
 ];
 
 var scene4 = [
@@ -195,7 +201,14 @@ var scene4 = [
 ["restaurant.jpg", "Tiffany", "shock", "Just use a napkin! That's so gross!", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "shock", "Oh... Yeah that's a good point.", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "annoy", "...", "brodyquest", "", ""],
-["1","2","3"]
+["1"]
+];
+
+var scene5 = [
+["restaurant.jpg", "", "", "SCENE 5 TEST", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "SCENE 5 TEST AGAIN", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "SCENE 5 TEST AGAIN AGAIN", "brodyquest", "", ""],
+["1"]
 ];
 
 var currentScene = scene1.slice(); //copy of the actual scene array
