@@ -141,10 +141,10 @@ function playSoundEffect() {
 //value = what the next scene depending on what player selects
 var choiceDict = {
 	1 : [2,3,4],
-	2 : [2,3],
-	3 : [5],
-	4 : [5],
-	5 : [1]
+	2 : [5, 5],
+	3 : [5, 5],
+	4 : [5, 5],
+	5 : [6]
 };
 
 //All dialogue arrays below
@@ -182,7 +182,18 @@ var scene2 = [
 ["restaurant.jpg", "", "", "Ethan stops and writhes the water out of the cardigan onto the floor. He hands it back.", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "sad", "So... No harm, no foul?", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "annoy", "...", "brodyquest", "", ""],
-["1", "2"]
+["restaurant.jpg", "", "", "10 minutes later", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "laugh", "...and then he said, \"no one does that, not on my watch!\"", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "laugh", "Funny huh?", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "sad", "Wait that's horrible. How is that funny?", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "shock", "Oh it's because at the beginning of the joke I said he lost his watch remember? So it's like a pun.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "sad", "But what about the girl being yanked around by the other guy?", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "cry", "No- that's not the point! The point is the \"not on my watch\" part is a play on words!", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "cry", "Sorry I just can't get over the abuse in this story. It's just so sad.", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "cry", "Uh, yeah okay sure.", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "30 minutes later", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "The waiter comes by and places the a leather bound check holder in the center of the table.", "brodyquest", "", ""],
+["Pay the bill", "Split bill"]
 ];
 
 
@@ -192,7 +203,18 @@ var scene3 = [
 ["restaurant.jpg", "Ethan", "shock", "Oh no! Wait sorry!", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "sad", "Guess I should've looked where I was pushing it off huh? Heh...", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "annoy", "...", "brodyquest", "", ""],
-["1"]
+["restaurant.jpg", "", "", "10 minutes later", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "laugh", "...and then he said, \"no one does that, not on my watch!\"", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "laugh", "Funny huh?", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "sad", "Wait that's horrible. How is that funny?", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "shock", "Oh it's because at the beginning of the joke I said he lost his watch remember? So it's like a pun.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "sad", "But what about the girl being yanked around by the other guy?", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "cry", "No- that's not the point! The point is the \"not on my watch\" part is a play on words!", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "cry", "Sorry I just can't get over the abuse in this story. It's just so sad.", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "cry", "Uh, yeah okay sure.", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "30 minutes later", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "The waiter comes by and places the a leather bound check holder in the center of the table.", "brodyquest", "", ""],
+["Pay the bill", "Split bill"]
 ];
 
 var scene4 = [
@@ -201,13 +223,28 @@ var scene4 = [
 ["restaurant.jpg", "Tiffany", "shock", "Just use a napkin! That's so gross!", "brodyquest", "", ""],
 ["restaurant.jpg", "Ethan", "shock", "Oh... Yeah that's a good point.", "brodyquest", "", ""],
 ["restaurant.jpg", "Tiffany", "annoy", "...", "brodyquest", "", ""],
-["1"]
+["restaurant.jpg", "", "", "10 minutes later", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "laugh", "...and then he said, \"no one does that, not on my watch!\"", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "laugh", "Funny huh?", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "sad", "Wait that's horrible. How is that funny?", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "shock", "Oh it's because at the beginning of the joke I said he lost his watch remember? So it's like a pun.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "sad", "But what about the girl being yanked around by the other guy?", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "cry", "No- that's not the point! The point is the \"not on my watch\" part is a play on words!", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "cry", "Sorry I just can't get over the abuse in this story. It's just so sad.", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "cry", "Uh, yeah okay sure.", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "30 minutes later", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "The waiter comes by and places the a leather bound check holder in the center of the table.", "brodyquest", "", ""],
+["Pay the bill", "Split bill"]
 ];
 
 var scene5 = [
-["restaurant.jpg", "", "", "SCENE 5 TEST", "brodyquest", "", ""],
-["restaurant.jpg", "", "", "SCENE 5 TEST AGAIN", "brodyquest", "", ""],
-["restaurant.jpg", "", "", "SCENE 5 TEST AGAIN AGAIN", "brodyquest", "", ""],
+["restaurant.jpg", "", "", "Ethan reaches for his wallet only to feel an empty pocket.", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "cry", "I uhh... So I would normally pay but uhh...", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "annoy", "You forgot your wallet?", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "cry", "I swear I'll pay you back! I'll venmo you right now...", "brodyquest", "", ""],
+["restaurant.jpg", "Ethan", "cry", "Err, okay I'll venmo you after I charge my phone's battery tonight.", "brodyquest", "", ""],
+["restaurant.jpg", "Tiffany", "annoy", "...", "brodyquest", "", ""],
+
 ["1"]
 ];
 
